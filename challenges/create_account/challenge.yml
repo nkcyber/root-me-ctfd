@@ -1,0 +1,57 @@
+# This file represents the base specification of your challenge. It is used by
+# other tools to install and deploy your challenge.
+
+name: "Create Account"
+author: "Zack Sargent"
+category: RootMe # should match the 'track' in challenges
+# TODO: make this in theme
+description: |
+    First, you must create your account.
+
+    <a href="https://www.root-me.org/?lang=en" target="_blank">
+        <h2>
+          Click here to create an account!
+        </h2>
+    </a>
+
+    **You must confirm your email to proceed.** Feel free to use your school email.
+
+    Enter literally anything into the flag box to mark this challenge as "done".
+
+value: 10
+type: standard
+
+# Optional settings
+
+# Flags specify answers that your challenge use. You should generally provide at least one.
+# Can be removed if unused
+# Accepts strings or dictionaries of CTFd API data
+flags:
+  - type: "regex"
+    content: ".*"
+    data: "case_insensitive"
+
+# Hints are used to give players a way to buy or have suggestions. They are not
+# required but can be nice.
+# Can be removed if unused
+# Accepts dictionaries or strings
+hints:
+    - content: |
+        Choose the account type: "Visitor access"
+      cost: 0
+
+# Requirements are used to make a challenge require another challenge to be
+# solved before being available.
+# Can be removed if unused
+# Accepts challenge names as strings or challenge IDs as integers
+requirements:
+    - "Welcome"
+
+# The state of the challenge.
+# If the field is omitted, the challenge is visible by default.
+# If provided, the field can take one of two values: hidden, visible.
+state: visible
+
+# Specifies what version of the challenge specification was used.
+# Subject to change until ctfcli v1.0.0
+version: "0.1"
