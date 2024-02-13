@@ -1,21 +1,21 @@
 # This file represents the base specification of your challenge. It is used by
 # other tools to install and deploy your challenge.
 
-name: "HTML Source Code"
+name: "HTTP Directory Indexing"
 author: "Zack Sargent"
-category: RootMe 
+category: RootMe
 description: |
     Click this link:
 
-    <a href="http://challenge01.root-me.org/web-serveur/ch1/" target="_blank">
+      <a href="http://challenge01.root-me.org/web-serveur/ch4/" target="_blank">
         <h2>
-          HTML Source Code
+          HTTP Directory Indexing
         </h2>
     </a>
 
     Enter the password as the flag to proceed.
 
-value: 5
+value: 15
 type: standard
 
 # Optional settings
@@ -24,16 +24,16 @@ type: standard
 # Can be removed if unused
 # Accepts strings or dictionaries of CTFd API data
 flags:
-  - "nZ^&@q5&sjJHev0"
+  - "LINUX"
 
 # Hints are used to give players a way to buy or have suggestions. They are not
 # required but can be nice.
 # Can be removed if unused
 # Accepts dictionaries or strings
-# hints:
-    # - content: |
-        # Choose the account type: "Visitor access"
-      # cost: 0
+hints:
+    - content: |
+        You need to modify the URL. Don't go to a file. Go to a folder.
+      cost: 1
 
 # Requirements are used to make a challenge require another challenge to be
 # solved before being available.
