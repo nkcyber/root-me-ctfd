@@ -1,0 +1,11 @@
+# MAKE SURE THIS STAYS IN SYNC WITH docker-compose.https.yml
+
+# this is the top-level docker-compose.yml that
+# orchestrates the deployment of all services.
+version: "3.8"
+include:
+  - path:
+    - ./services/CTFd/CTFd/docker-compose.yml
+    - ./services/CTFd/docker-compose.override.yml
+# services:
+# add services as required
